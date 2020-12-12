@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/cancell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convert" />
+
+    <TextView
+        android:id="@+id/txtCent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/oC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editCent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCent" />
+
+    <TextView
+        android:id="@+id/txtFha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/oF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCent" />
+
+    <EditText
+        android:id="@+id/editFha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFha" />
+
+    <RadioGroup
+        android:id="@+id/rtoGr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editFha">
+
+        <RadioButton
+            android:id="@+id/rtoFha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rtoF" />
+
+        <RadioButton
+            android:id="@+id/rtoCent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rtoC" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/convert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rtoGr" />
+</androidx.constraintlayout.widget.ConstraintLayout>

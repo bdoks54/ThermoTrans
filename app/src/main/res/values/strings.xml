@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ThermoTrans</string>
+    <string name="rtoF">섭씨를 화씨로</string>
+    <string name="rtoC">화씨를 섭씨로</string>
+    <string name="oC">섭씨(oC)</string>
+    <string name="oF">화씨(oF)</string>
+    <string name="convert">CONVERT</string>
+    <string name="cancel">CANCEL</string>
+</resources>
